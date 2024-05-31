@@ -228,16 +228,18 @@ particlesJS("particles-js", {
   });
 
   document.getElementById('rect4').addEventListener('click', function() {
-    window.open('https://github.com/Abysswlkr/Crvice_Project', '_blank');
+    window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank');
   });
 
   document.getElementById('rect5').addEventListener('click', function() {
-    window.open('https://github.com/Abysswlkr/Crvice_Project', '_blank');
+    window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank');
   });
   
   document.getElementById('rect6').addEventListener('click', function() {
-    window.open('https://github.com/Abysswlkr/Crvice_Project', '_blank');
+    window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank');
   });
+
+
 
 
   //about me images
