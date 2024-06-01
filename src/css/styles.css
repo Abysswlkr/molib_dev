@@ -79,31 +79,27 @@ body {
 }
 
 .text-1 {
+    width: 100%; 
     display: flex;
     justify-content: left;
     font-size: 22px;
     margin-bottom: 10px;
 }
 
-.text-2 {
-    width: 450px;
-    display: flex;
-    justify-content: left;
-    font-size: 22px;
-    margin-bottom: 10px;
-}
-
+.text-2,
 .text-2-5 {
-    width: 450px;
+    width: calc(100% - 50px); 
     display: flex;
     justify-content: left;
     font-size: 22px;
+    margin-bottom: 10px;
 }
 
 .text-3 {
+    width: calc(100% - 50px); 
     display: flex;
     justify-content: left;
-    font-size: 25px;
+    font-size: 24px;
     color: #0DCAF0;
     font-weight: 500;
 }
@@ -308,15 +304,7 @@ body {
 
     /* about-me */
     .container-aboutme{
-        width: 100%;
-        height: auto;
         transform: translateX(0);
-    }
-
-    .text-1, .text-2, .text-2-5, .text-3 {
-        width: 340px;
-        max-width: 340px;
-        font-size: 0.9rem;
     }
 
     .container-hobbies, .container-solanum {
