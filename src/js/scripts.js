@@ -1,74 +1,3 @@
-//Scrollspy landing 
-function scrollToSection(sectionId) {
-    const section = document.getElementById(sectionId);
-    if (section) {
-        section.scrollIntoView({
-            behavior: 'smooth'
-        });
-    }
-}
-
-//Cursor light
-let cursorX = window.innerWidth / 2;
-let cursorY = window.innerHeight / 2;
-
-document.addEventListener('mousemove', (e) => {
-    cursorX = e.clientX;
-    cursorY = e.clientY;
-});
-
-const root = document.documentElement;
-
-function updateLight() {
-    const currentX = parseFloat(getComputedStyle(root).getPropertyValue('--cursorX') || cursorX);
-    const currentY = parseFloat(getComputedStyle(root).getPropertyValue('--cursorY') || cursorY);
-    
-    const newX = currentX + (cursorX - currentX) * 0.1; // Ajusta el factor para más o menos retardo
-    const newY = currentY + (cursorY - currentY) * 0.1;
-
-    root.style.setProperty('--cursorX', `${newX}px`);
-    root.style.setProperty('--cursorY', `${newY}px`);
-
-    requestAnimationFrame(updateLight);
-}
-
-updateLight();
-
-//portofilio animation entrance
-document.addEventListener("DOMContentLoaded", function() {
-  const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-          if (entry.isIntersecting) {
-              entry.target.classList.add('visible');
-              observer.unobserve(entry.target); // Dejar de observar después de hacer visible
-          }
-      });
-  });
-
-  const container = document.querySelector('.container-content-portfolio');
-  if (container) {
-      observer.observe(container);
-  }
-});
-
-//about me text entrance
-document.addEventListener("DOMContentLoaded", function() {
-  const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-          if (entry.isIntersecting) {
-              entry.target.classList.add('visible');
-              observer.unobserve(entry.target); // Dejar de observar después de hacer visible
-          }
-      });
-  });
-
-  const aboutMe = document.querySelector('.about-me');
-  if (aboutMe) {
-      observer.observe(aboutMe);
-  }
-});
-
-
 //solanum text effect entrance
 document.addEventListener('DOMContentLoaded', function() {
   const text = '"Podríamos no tener mucho en común, tú y yo. Aun así, te considero un amigo"';
@@ -97,9 +26,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   observer.observe(document.querySelector('.container-solanum'));
 });
-
-
-
 
 //Particles.JS library
 particlesJS("particles-js", {
@@ -215,33 +141,29 @@ particlesJS("particles-js", {
 
 
   //Redirections
-  document.getElementById('rect1').addEventListener('click', function() {
+  document.getElementById('link1').addEventListener('click', function() {
       window.open('https://github.com/Abysswlkr/Crvice_Project', '_blank');
   });
 
-  document.getElementById('rect2').addEventListener('click', function() {
+  document.getElementById('link2').addEventListener('click', function() {
     window.open('https://github.com/Abysswlkr/OuterGamesWeb', '_blank');
   });
 
-  document.getElementById('rect3').addEventListener('click', function() {
+  document.getElementById('link3').addEventListener('click', function() {
     window.open('https://github.com/Abysswlkr/The_Witcher_Enciclopedia', '_blank');
   });
 
-  document.getElementById('rect4').addEventListener('click', function() {
+  document.getElementById('link4').addEventListener('click', function() {
     window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank');
   });
 
-  document.getElementById('rect5').addEventListener('click', function() {
+  document.getElementById('link5').addEventListener('click', function() {
     window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank');
   });
   
-  document.getElementById('rect6').addEventListener('click', function() {
+  document.getElementById('link6').addEventListener('click', function() {
     window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank');
   });
 
-
-
-
-  //about me images
 
 

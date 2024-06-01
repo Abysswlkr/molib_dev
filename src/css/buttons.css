@@ -1,0 +1,287 @@
+/* button-cv CV */
+.button-container {
+  display: flex;
+}
+
+/* Download CV */
+.button-cv {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #087990;
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px #141414;
+    cursor: pointer;
+    transition-duration: .3s;
+    overflow: hidden;
+    position: relative;
+    margin-right: 15px;
+  }
+  
+  .icon-tabler-download {
+    width: 20px;
+    transition-duration: .3s;
+  }
+  
+  .icon-tabler-download path {
+    fill: transparent;
+  }
+  
+  .button-cv:hover {
+    width: 150px;
+    border-radius: 50px;
+    transition-duration: .3s;
+    background-color: #087990;
+    align-items: center;
+  }
+  
+  .button-cv:hover .icon-tabler-download {
+    opacity: 0;
+    transition-duration: .3s;
+  }
+  
+  .button-cv::before {
+    position: absolute;
+    top: -22px;
+    content: "Descargar CV";
+    color: white;
+    transition-duration: .3s;
+    font-size: 2px;
+  }
+  
+  .button-cv:hover::before {
+    font-size: 16px;
+    font-family: 'Darker Grotesque';
+    opacity: 1;
+    transform: translateY(30px);
+    transition-duration: .3s;
+  }
+
+/* Redirect Github */
+.button-github {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #010409;
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 20px #141414;
+  cursor: pointer;
+  transition-duration: .3s;
+  overflow: hidden;
+  position: relative;
+  margin-right: 15px;
+}
+
+.icon-tabler-brand-github {
+  width: 25px;
+  transition-duration: .3s;
+}
+
+.icon-tabler-brand-github path {
+  fill: transparent;
+}
+
+.button-github:hover {
+  width: 150px;
+  border-radius: 50px;
+  transition-duration: .3s;
+  background-color: #010409;
+  align-items: center;
+}
+
+.button-github:hover .icon-tabler-brand-github {
+  opacity: 0;
+  transition-duration: .3s;
+}
+
+.button-github::before {
+  position: absolute;
+  top: -22px;
+  content: "Github";
+  color: white;
+  transition-duration: .3s;
+  font-size: 2px;
+}
+
+.button-github:hover::before {
+  font-size: 16px;
+  font-family: 'Darker Grotesque';
+  opacity: 1;
+  transform: translateY(30px);
+  transition-duration: .3s;
+}
+
+/* Redirect Linkedin */
+.button-linkedin {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #0A66C2;
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 20px #141414;
+  cursor: pointer;
+  transition-duration: .3s;
+  overflow: hidden;
+  position: relative;
+  margin-right: 15px;
+}
+
+.icon-tabler-brand-linkedin {
+  width: 23px;
+  transition-duration: .3s;
+}
+
+.icon-tabler-brand-linkedin path {
+  fill: transparent;
+}
+
+.button-linkedin:hover {
+  width: 150px;
+  border-radius: 50px;
+  transition-duration: .3s;
+  background-color: #0A66C2;
+  align-items: center;
+}
+
+.button-linkedin:hover .icon-tabler-brand-linkedin {
+  opacity: 0;
+  transition-duration: .3s;
+}
+
+.button-linkedin::before {
+  position: absolute;
+  top: -22px;
+  content: "LinkedIn";
+  color: white;
+  transition-duration: .3s;
+  font-size: 2px;
+}
+
+.button-linkedin:hover::before {
+  font-size: 16px;
+  font-family: 'Darker Grotesque';
+  opacity: 1;
+  transform: translateY(30px);
+  transition-duration: .3s;
+}
+
+/* Redirect X */
+.button-x {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #000000;
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 20px #141414;
+  cursor: pointer;
+  transition-duration: .3s;
+  overflow: hidden;
+  position: relative;
+  margin-right: 30px;
+}
+
+.icon-tabler-brand-x {
+  width: 25px;
+  transition-duration: .3s;
+}
+
+.icon-tabler-brand-x path {
+  fill: transparent;
+}
+
+.button-x:hover {
+  width: 150px;
+  border-radius: 50px;
+  transition-duration: .3s;
+  background-color: #000000;
+  align-items: center;
+}
+
+.button-x:hover .icon-tabler-brand-x {
+  opacity: 0;
+  transition-duration: .3s;
+}
+
+.button-x::before {
+  position: absolute;
+  top: -22px;
+  content: "Twitter";
+  color: white;
+  transition-duration: .3s;
+  font-size: 2px;
+}
+
+.button-x:hover::before {
+  font-size: 16px;
+  font-family: 'Darker Grotesque';
+  opacity: 1;
+  transform: translateY(30px);
+  transition-duration: .3s;
+}
+
+
+/* Button redirect portfolio */
+
+.button-redirect {
+  background-color: #11ACCB;
+  border: 1px solid #11ACCB;
+  padding: 5px;
+  position: relative;
+  width: 7.5em;
+  height: 2em;
+  transition: 0.5s;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.4em;
+  font-family: 'Darker Grotesque';
+}
+
+.button-redirect p {
+  position: absolute;
+  top: 0.3em;
+  left: 1.50em;
+  margin: 0;
+  padding: 0;
+  transition: .5s;
+  color: #fff;
+}
+
+.button-redirect svg {
+  position: absolute;
+  top: 0.50em;
+  right: 0.6em;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  transition: 0.5s;
+  height: 1em;
+}
+
+.button-redirect:hover p {
+  left: 0.5em;
+  color: #fff
+}
+
+.button-redirect:hover svg {
+  opacity: 1;
+}
+
+.button-redirect:hover {
+  background-color: #11ACCB;
+}
