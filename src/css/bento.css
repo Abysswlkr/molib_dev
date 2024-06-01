@@ -24,7 +24,7 @@ body {
 }
 
 .grid-item {
-    background-color: #181818;
+    background-color: #191919;
     padding: 20px;
     border-radius: 8px;
     position: relative;
@@ -63,18 +63,17 @@ body {
 
 /* Custom item sizes and positions */
 .item1 {
-    grid-column: span 4;
+    grid-column: span 3;
     grid-row: span 2;
 }
 
 .item2 {
-    position: relative;
-    grid-column: span 8;
+    grid-column: span 4;
     grid-row: span 2;
 }
 
 .item3 {
-    grid-column: span 1;
+    grid-column: span 5;
     grid-row: span 2;
 }
 

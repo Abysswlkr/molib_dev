@@ -10,16 +10,16 @@ body {
     align-items: center;
   
     /* Dark mode colors and gradient */
-    background: #121212; /* Fallback for browsers that don't support gradients */
+    background: #000000; /* Fallback for browsers that don't support gradients */
     background: linear-gradient(
       135deg,
-      #121212 25%,
-      #1a1a1a 25%,
-      #1a1a1a 50%,
-      #121212 50%,
-      #121212 75%,
-      #1a1a1a 75%,
-      #1a1a1a
+      #000000 25%,
+      #0a0a0a 25%,
+      #0a0a0a 50%,
+      #000000 50%,
+      #000000 75%,
+      #0a0a0a 75%,
+      #0a0a0a
     );
     background-size: 40px 40px;
   
@@ -41,14 +41,16 @@ body {
 .container-me {
     width: 100%;
     max-width: 600px;
-    transform: translateY(40px);
+    transform: translateY(50px);
 }
 
 .title {
     display: flex;
     justify-content: left;
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 500;
+    margin-bottom: 5px;
+    margin-top: 10px;
 }
 
 .hi {
@@ -73,14 +75,13 @@ body {
     width: 100%;
     height: auto;
     max-width: 500px;
-    margin-bottom: 50px;
-    transform: translateX(5%);
+    transform: translateX(3%);
 }
 
 .text-1 {
     display: flex;
     justify-content: left;
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 10px;
 }
 
@@ -88,7 +89,7 @@ body {
     width: 450px;
     display: flex;
     justify-content: left;
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 10px;
 }
 
@@ -96,7 +97,7 @@ body {
     width: 450px;
     display: flex;
     justify-content: left;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .text-3 {
@@ -112,14 +113,13 @@ body {
 .container-hobbies {
     width: 100%;
     height: 100%;
-    max-width: 480px;
-    max-height: 350px;
-    margin: 20px;
+    max-width: 500px;
+    max-height: 300px;
     position: relative;
     border-radius: 20px;
     background-clip: padding-box;
     margin-bottom: 70px;
-    transform: translateX(10%);
+    transform: translateX(18%);
 }
 
 .container-hobbies::before {
@@ -171,7 +171,7 @@ body {
 
 .img-hobbies {
     width: 100%;
-    max-width: 400px;
+    max-width: 350px;
 }
 
 .container-solanum {
@@ -179,7 +179,7 @@ body {
     bottom: 0;
     left: 50%; 
     transform: translateX(-50%); 
-    width: 75%;
+    width: 100%;
     height: 40px;
     box-shadow: 0 0 20px #191919;
     background: #034553;
@@ -267,6 +267,100 @@ body {
     width: 100%;
     max-width: 1500px;
 }
+
+.footer {
+    width: 100%; transform: translateY(25px); font-size: 20px; color: #949494;
+}
+
+
+/* Responsive adjustments */
+
+@media (max-width: 768px) {
+
+    /* presentation me */
+    .container-me {
+        transform: translateY(-20px);
+    }
+    
+    .title {
+        display: flex;
+        justify-content: left;
+        font-size: 45px;
+        font-weight: 500;
+    }
+    
+    .hi {
+        display: flex;
+        justify-content: left;
+        font-size: 40px;
+        font-weight: 100;
+        margin-bottom: 10px;
+    }
+    
+    .subtitle {
+        display: flex;
+        justify-content: left;
+        font-size: 40px;
+        color: #0DCAF0;
+        font-weight: 200;
+        margin-top: 5px;
+    }
+
+    /* about-me */
+    .container-aboutme{
+        width: 100%;
+        height: auto;
+        transform: translateX(0);
+    }
+
+    .text-1, .text-2, .text-2-5, .text-3 {
+        width: 340px;
+        max-width: 340px;
+        font-size: 0.9rem;
+    }
+
+    .container-hobbies, .container-solanum {
+        width: 100%;
+        transform: translateX(0);
+    }
+
+    .title-hobbies {
+        font-size: 1.25rem;
+    }
+
+    .img-hobbies {
+        max-width: 300px;
+    }
+
+    .container-solanum {
+        width: 100%;
+        height: 55px;
+        border-radius: 5px;
+        transform: translateX(-50%); /* Reset transform */
+
+    }
+
+    .typewriter-text {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    /* tech */
+    .container-title-tech {
+        text-align: center;
+    }
+
+    /* footer */
+    .footer {
+        width: 100%; 
+        font-size: 20px; 
+        color: #949494;
+        text-align: center;
+        transform: translateX(0px);
+    }
+}
+
+
 
 
 
