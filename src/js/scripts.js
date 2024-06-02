@@ -66,18 +66,6 @@ document.addEventListener('DOMContentLoaded', function() {
     window.open('https://github.com/Abysswlkr/The_Witcher_Enciclopedia', '_blank');
   });
 
-  document.getElementById('link4').addEventListener('click', function() {
-    window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank');
-  });
-
-  document.getElementById('link5').addEventListener('click', function() {
-    window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank');
-  });
-  
-  document.getElementById('link6').addEventListener('click', function() {
-    window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank');
-  });
-
   //Download CV
   function downloadCV() {
     const url = 'assets/pdf/OLIVARES-BUENO-MIGUEL-CV.pdf';
@@ -92,8 +80,5 @@ document.addEventListener('DOMContentLoaded', function() {
     enlace.click();
     document.body.removeChild(enlace);
 }
-
-
-
 
 

@@ -41,7 +41,7 @@ body {
 .container-me {
     width: 100%;
     max-width: 600px;
-    transform: translateY(50px);
+    transform: translateY(40px);
 }
 
 .title {
@@ -264,8 +264,17 @@ body {
     max-width: 1500px;
 }
 
+.container-footer {
+    width: 100%; 
+    transform: translateY(25px); 
+    font-size: 20px; 
+    color: #949494;
+}
+
 .footer {
-    width: 100%; transform: translateY(25px); font-size: 20px; color: #949494;
+   display: flex; 
+   justify-content: center;
+   transform: translateY(-25px);
 }
 
 
