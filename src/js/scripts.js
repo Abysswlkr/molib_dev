@@ -23,20 +23,20 @@ document.addEventListener('DOMContentLoaded', function() {
       if (index < text.length) {
           textContainer.textContent += text.charAt(index);
           index++;
-          setTimeout(type, 100); // Ajusta la velocidad de la escritura aquí
+          setTimeout(type, 100); 
       } else {
-          cursor.style.display = 'none'; // Oculta el cursor al finalizar
+          cursor.style.display = 'none'; 
       }
   }
 
   const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
           if (entry.isIntersecting) {
-              setTimeout(type, 500); // Retraso inicial antes de comenzar a escribir
-              observer.unobserve(entry.target); // Deja de observar una vez que la animación comienza
+              setTimeout(type, 500); 
+              observer.unobserve(entry.target); 
           }
       });
-  }, { threshold: 0.1 }); // Ajusta el umbral según sea necesario
+  }, { threshold: 0.1 }); 
 
   observer.observe(document.querySelector('.container-solanum'));
 });
