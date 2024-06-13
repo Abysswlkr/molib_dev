@@ -66,6 +66,18 @@ document.addEventListener('DOMContentLoaded', function() {
     window.open('https://github.com/Abysswlkr/The_Witcher_Enciclopedia', '_blank');
   });
 
+  document.getElementById('link4').addEventListener('click', function() {
+    window.open('https://github.com/Abysswlkr/Tetris_game', '_blank');
+  });
+
+  document.getElementById('web4').addEventListener('click', function() {
+    window.open('https://tetris-game-pearl.vercel.app/', '_blank');
+  });
+
+
+
+
+
   //Download CV
   function downloadCV() {
     const url = 'assets/pdf/OLIVARES-BUENO-MIGUEL-CV.pdf';
