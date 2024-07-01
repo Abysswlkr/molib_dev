@@ -54,12 +54,19 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 
+  //Crvice Project
   document.getElementById('link1').addEventListener('click', function() {
       window.open('https://github.com/Abysswlkr/Crvice_Project', '_blank');
   });
 
+
+  //Outer Games Project
   document.getElementById('link2').addEventListener('click', function() {
     window.open('https://github.com/Abysswlkr/OuterGamesWeb', '_blank');
+  });
+
+  document.getElementById('web2').addEventListener('click', function() {
+    window.open('https://outer-games.vercel.app/landing', '_blank');
   });
 
   document.getElementById('link3').addEventListener('click', function() {
