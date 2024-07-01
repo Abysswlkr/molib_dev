@@ -59,6 +59,13 @@ document.addEventListener('DOMContentLoaded', function() {
       window.open('https://github.com/Abysswlkr/Crvice_Project', '_blank');
   });
 
+  document.getElementById('web1').addEventListener('click', function() {
+    window.open('https://crvice.vercel.app', '_blank');
+  });
+
+
+  
+
 
   //Outer Games Project
   document.getElementById('link2').addEventListener('click', function() {
@@ -66,12 +73,18 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   document.getElementById('web2').addEventListener('click', function() {
-    window.open('https://outer-games.vercel.app/landing', '_blank');
+    window.open('https://outer-games.vercel.app', '_blank');
   });
 
+  //The witcher Enciclopedia
   document.getElementById('link3').addEventListener('click', function() {
     window.open('https://github.com/Abysswlkr/The_Witcher_Enciclopedia', '_blank');
   });
+
+  document.getElementById('web3').addEventListener('click', function() {
+    window.open('https://the-witcher-enciclopedia.vercel.app', '_blank');
+  });
+  
 
   document.getElementById('link4').addEventListener('click', function() {
     window.open('https://github.com/Abysswlkr/Tetris_game', '_blank');
