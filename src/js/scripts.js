@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   //Redirections
   document.getElementById('redirect-github').addEventListener('click', function() {
-    window.open('https://github.com/Abysswlkr', '_blank');
+    window.open('https://github.com/Molibdev', '_blank');
   });
   document.getElementById('redirect-linkedin').addEventListener('click', function() {
     window.open('https://www.linkedin.com/in/molivaresb/', '_blank');
