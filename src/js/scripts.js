@@ -94,6 +94,14 @@ document.addEventListener('DOMContentLoaded', function() {
     window.open('https://tetris-game-pearl.vercel.app/', '_blank');
   });
 
+  document.getElementById('link5').addEventListener('click', function() {
+    window.open('https://github.com/Molibdev/ATKG', '_blank');
+  });
+
+  document.getElementById('web4').addEventListener('click', function() {
+    window.open('https://tetris-game-pearl.vercel.app/', '_blank');
+  });
+
 
 
 

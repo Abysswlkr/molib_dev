@@ -64,7 +64,7 @@ body {
 .subtitle {
     display: flex;
     justify-content: left;
-    font-size: 50px;
+    font-size: 45px;
     transform: translateY(-20px);
     color: #0DCAF0;
     font-weight: 200;
